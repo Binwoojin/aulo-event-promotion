@@ -1,0 +1,64 @@
+/* Aulo 디자인 컨셉 토큰 — 이벤트 페이지 공통
+   출처: aulo-reservation-app brand-landing/styles.css · webapp/src/styles/app.css (2026-10-26 기준).
+   값만 옮겨 왔다. 원본 디자인이 바뀌면 여기를 함께 고친다.
+   서체: Pretendard(한글, 제목·본문) · Manrope(영문) · Fraunces(로고·영문 소문자 한 줄·숫자). 각 페이지에서 불러온다. */
+
+:root {
+  /* 색 — 크림 배경 · 차콜 글자 · 올리브 강조 */
+  --color-bg: #F7F4EE;
+  --color-bg-sub: #EFEBE2;
+  --color-surface: #FFFDFA;
+  --color-text: #302B26;
+  --color-text-sub: #655D54;        /* 배경 대비 4.5:1 이상 */
+  --color-border: #D8D0C4;
+  --color-border-control: #8A8073;  /* 칩·컨트롤 경계 3:1 이상 */
+  --color-olive: #596246;
+  --color-olive-hover: #444D34;
+  --color-olive-light: #E7EBDD;
+  --color-on-dark: #F7F4EE;
+  --color-on-dark-sub: #BDB5A9;
+
+  /* 공간별 색 (Cafe · Focus · Rest · Suite) */
+  --cafe-fg: #795844;  --cafe-bg: #F0E6DC;
+  --focus-fg: #596246; --focus-bg: #E7EBDD;
+  --rest-fg: #88604F;  --rest-bg: #F2E7E0;
+  --suite-fg: #514438; --suite-bg: #EAE4DF;
+
+  /* 브랜드 띠 · 그라데이션 */
+  --grad-olive: linear-gradient(145deg, #6B7553 0%, #596246 50%, #4A5339 100%);
+  --grad-warm: radial-gradient(90% 70% at 85% 0%, rgba(255, 248, 236, 0.9) 0%, rgba(255, 248, 236, 0) 60%), linear-gradient(170deg, #F2E6D6 0%, #ECDDC9 55%, #F3EADF 100%);
+  --grad-cream: linear-gradient(180deg, #FFFDFA 0%, #F6EFE5 100%);
+
+  /* 서체 */
+  --font-ko: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-en: "Manrope", var(--font-ko);
+  --font-logo: "Fraunces", Georgia, "Times New Roman", serif;
+  --fs-display: clamp(3rem, 1.6rem + 6vw, 5.5rem);
+  --fs-section: clamp(1.875rem, 1.3rem + 2.2vw, 2.75rem);
+  --fs-lead: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-label: 0.75rem;
+  --lh-body: 1.65;
+
+  /* 간격 · 폭 */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 16px; --space-4: 24px;
+  --space-5: 32px; --space-6: 48px; --space-7: 64px; --space-8: 96px;
+  --gutter: 20px;
+  --content-max: 1200px;
+
+  /* 모서리 · 사진 틀 */
+  --radius-button: 8px;
+  --radius-panel: 12px;
+  --radius-card: 16px;
+  --radius-pill: 999px;
+  --arch: 999px 999px var(--radius-card) var(--radius-card); /* 아치형 사진 틀 */
+  --shadow-card: 0 1px 2px rgba(48, 43, 38, 0.04), 0 6px 20px rgba(48, 43, 38, 0.06);
+
+  /* 모션 — 'Stay in your rhythm': 천천히 떠오르고 짧게 반응한다 */
+  --motion: 180ms;
+  --motion-reveal: 760ms;
+  --motion-slow: 1200ms;
+  --ease-settle: cubic-bezier(0.32, 0.08, 0.24, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
